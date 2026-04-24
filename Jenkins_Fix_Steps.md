@@ -16,4 +16,4 @@
 
 5. Press `Esc` → type `:wq` → press `Enter` to save
 
-6. Run Jenkins build again — done ✅
+6. Run Jenkins build again — done
