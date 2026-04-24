@@ -1,0 +1,25 @@
+#!/bin/bash
+
+echo "===================================="
+echo "Jenkins CI/CD Pipeline Started"
+echo "Build Number: $BUILD_NUMBER"
+echo "Time: $(date)"
+echo "===================================="
+
+if [ -d "project" ]; then
+  rm -rf project
+fi
+
+git clone https://github.com/Satyams-git/jenkins-webpage-project.git project
+cd project
+chmod +x test.sh
+
+echo "Running Tests..."
+./test.sh
+
+echo "Test Passed, Deploying..."
+
+sudo rm -rf /var/www/html/*
+sudo cp -r * /var/www/html/
+
+echo "Deployment Successful"
