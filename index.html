@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Learning</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>We Are Learning Jenkins with Satyam</h1>
+        <p>Automate your deployments using Jenkins Freestyle Projects.</p>
+
+        <button onclick="showMessage()">Start Learning</button>
+
+        <div id="message" class="hidden">
+            Jenkins makes CI/CD simple and powerful.
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
