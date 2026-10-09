@@ -1,4 +1,6 @@
 #!/bin/bash
+# Test fail ho toh script wahin ruk jaaye, deploy na ho
+set -e
 
 echo "===================================="
 echo "Jenkins CI/CD Pipeline Started"
@@ -19,7 +21,7 @@ echo "Running Tests..."
 
 echo "Test Passed, Deploying..."
 
-sudo rm -rf /var/www/html/*
-sudo cp -r * /var/www/html/
+rm -rf /var/www/html/*
+cp index.html style.css /var/www/html/
 
 echo "Deployment Successful"
