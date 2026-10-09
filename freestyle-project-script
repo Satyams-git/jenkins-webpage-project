@@ -1,5 +1,5 @@
 #!/bin/bash
-# Test fail ho toh script wahin ruk jaaye, deploy na ho
+
 set -e
 
 echo "===================================="
